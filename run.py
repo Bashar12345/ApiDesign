@@ -1,4 +1,12 @@
-from flask import flask ,app
+from flask import Flask
 
-if __name__==flask(__name__):
-     app.run(debug=True)
+app = Flask(__name__)
+
+# if app:
+#      app.run(debug=True)
+
+
+
+@app.route('/')
+def hello_world():
+    return 'Hello world!'
