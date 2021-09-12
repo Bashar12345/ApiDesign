@@ -1,0 +1,49 @@
+.reponsHero {
+
+  @include breakpoint-up(large){
+    min-height: 655px;
+    display: flex;
+  }
+
+  &__image {                  // overlay picture and adjust the position size
+    position: relative;
+    background-image: url("/images/nextGen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; // change the overlay mockup image position
+    min-height: 17.5rem;
+
+    @include breakpoint-up(large){
+      flex: 1;
+    }
+
+    &::before {
+        content: "";
+      position: absolute;
+      width: 10%;
+      height: 28%;
+      background-size: 93%;
+      background-image: url("/images/b.jpg");
+      background-repeat: no-repeat;
+      background-position: center bottom; 
+      //background-position: center bottom;
+      left: 50%;
+      transform: translateX(-50%) translateY(100%);
+      
+    }
+  }
+  &__text{
+    text-align: center;
+    p{
+      line-height: 1.5;
+      margin: 10px;
+    }
+    h1{
+      font-weight: 300;
+      font-size: 1.54rem;
+      line-height: 1;
+      color: $darkblue;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
