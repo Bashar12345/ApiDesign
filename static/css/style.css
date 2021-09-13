@@ -165,7 +165,7 @@ button,
   transition: opacity 300ms ease-in-out;
 }
 
-@media (min-width: 1023px) {
+@media (max-width: 1023px) {
   .hide-for-mobile {
     display: none;
   }

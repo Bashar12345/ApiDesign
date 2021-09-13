@@ -77,9 +77,10 @@
     //border: 1px solid red;
 
     a {
-      font-size: $font-sm;2
+      font-size: $font-sm;
       transition: 200ms ease-in-out;
       color: $grayishblue;
+      
       &:not(:last-child) {
         margin-right: 32px;
       }
