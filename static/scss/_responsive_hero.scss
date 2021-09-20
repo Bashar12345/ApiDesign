@@ -47,9 +47,9 @@
 
     @include breakpoint-up(large) {
       flex: 2;
-      order: 2;
+      order: 1;
       height: 41rem;
-      text-align: center;;
+      text-align: left;
 
     }
 
