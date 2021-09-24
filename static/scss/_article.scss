@@ -3,22 +3,24 @@
 }
 
 .article {
-  &__content{
-
-  }
-  &__item{
-
-  }
-  &__image {
-
-  }
-  &__text{
-
+  &__content {
+    
   }
 
   &__grid {
-  
+    display: block;
+    flex: 1;
+    
+
   }
+
+  &__item {}
+
+  &__image {}
+
+  &__text {}
+
+
 }
 
 
@@ -63,7 +65,7 @@
   -ms-grid-columns: repeat auto-fit, minmax(230px, 1fr);
       grid-template-columns: repeat auto-fit, minmax(230px, 1fr);
   /*  grid-template-columns: 1fr; */
-  /*  @include breakpoint-up(medium) {
+/*  @include breakpoint-up(medium) {
       grid-template-columns: repeat(2, 1fr);
     }
     @include breakpoint-up(large) {

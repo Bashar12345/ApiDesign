@@ -58,15 +58,6 @@
       margin: 10px;
     }
 
-    h1 {
-      font-weight: 300;
-      font-size: 1.54rem;
-      line-height: 1;
-      color: $darkblue;
-      margin-bottom: 1.5rem;
-      @include breakpoint-up(large){
-        font-size:$font-xlg;
-      }
-    }
+    
   }
 }
