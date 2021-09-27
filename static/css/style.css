@@ -617,7 +617,7 @@ button,
 .footer {
   background-color: azure;
   color: white;
-  padding: 2.5rem;
+  padding: 2.5rem 2.5rem 3.5rem 2.5rem;
   text-align: center;
 }
 
@@ -654,8 +654,14 @@ a {
   margin-bottom: 1.8734rem;
 }
 
+@media (min-width: 1024px) {
+  .foot__social {
+    grid-area: social;
+  }
+}
+
 .foot__social img {
-  inline-size: 1.9rem;
+  inline-size: 1.8rem;
 }
 
 .foot__social a {
@@ -677,6 +683,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  line-height: 2.25rem;
 }
 
 @media (min-width: 1024px) {
