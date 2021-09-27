@@ -90,6 +90,7 @@ body {
   color: #9698a6;
   font-family: "Public sans", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   min-height: 300vh;
+  overflow-x: hidden;
   /*@include breakpoint-up(large {
     font-size: $font-med;
   }*/
@@ -611,5 +612,86 @@ button,
   .features__description {
     margin-bottom: 2.25rem;
   }
+}
+
+.footer {
+  background-color: azure;
+  color: white;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3] 2fr;
+        grid-template-columns: repeat(3, 1fr) 2fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "logo links1 links2" "social links1 links2";
+  }
+}
+
+a {
+  color: white;
+}
+
+.foot__logo {
+  display: inline-block;
+  margin-bottom: 1.87345rem;
+}
+
+@media (min-width: 1024px) {
+  .foot__logo {
+    grid-area: logo;
+  }
+}
+
+.foot__social {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 1.8734rem;
+}
+
+.foot__social img {
+  inline-size: 1.9rem;
+}
+
+.foot__social a {
+  display: inline-block;
+}
+
+.foot__social a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.foot__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .foot__links.col1 {
+    grid-area: links1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .foot__links.col2 {
+    grid-area: links2;
+  }
+}
+
+.foot__copyright {
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */

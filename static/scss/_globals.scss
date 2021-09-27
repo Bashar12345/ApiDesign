@@ -19,6 +19,7 @@ body {
   font-family: "Public sans", "Lucida Sans", "Lucida Sans Regular",
     "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   min-height: 300vh;
+  overflow-x: hidden;
 
   /*@include breakpoint-up(large {
     font-size: $font-med;
