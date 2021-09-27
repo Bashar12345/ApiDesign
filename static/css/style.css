@@ -329,10 +329,9 @@ button,
 }
 
 .header nav {
-  padding-top: 1.625rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0525rem;
   position: relative;
-  background-color: whitesmoke;
 }
 
 .header.open .header__toggle span:first-child {
@@ -402,9 +401,10 @@ button,
 
 .header__links a {
   font-size: 0.875rem;
-  -webkit-transition: 200ms ease-in-out;
-  transition: 200ms ease-in-out;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
   color: #9698a6;
+  position: relative;
 }
 
 .header__links a:not(:last-child) {
@@ -416,19 +416,18 @@ button,
 }
 
 .header__links a:hover::before {
-  opacity: 1;
+  background: -webkit-gradient(linear, left top, right top, from(limegreen), to(lightblue));
+  background: linear-gradient(to right, limegreen, lightblue);
 }
 
 .header__links a::before {
   content: "";
   position: absolute;
-  display: block;
-  height: 5px;
-  background: limegreen;
+  height: 4px;
   left: 0px;
   right: 0px;
-  bottom: -5px;
-  opacity: 0;
+  bottom: -35px;
+  opacity: 1;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
 }
@@ -639,7 +638,12 @@ a {
 
 .foot__logo {
   display: inline-block;
-  margin-bottom: 1.87345rem;
+}
+
+@media (min-width: 640px) {
+  .foot__logo {
+    margin-bottom: 1.874rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -657,6 +661,8 @@ a {
 @media (min-width: 1024px) {
   .foot__social {
     grid-area: social;
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
 }
 
@@ -700,5 +706,11 @@ a {
 
 .foot__copyright {
   display: inline-block;
+  text-align: right;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 /*# sourceMappingURL=style.css.map */

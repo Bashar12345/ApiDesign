@@ -23,7 +23,10 @@ a {
 
     &__logo {
         display: inline-block;
-        margin-bottom: 1.87345rem;
+      
+         @include breakpoint-up(medium) {
+               margin-bottom: 1.874rem;
+         }
         @include breakpoint-up(large) {
             grid-area: logo;
         }
@@ -33,6 +36,7 @@ a {
     &__social {
         @include breakpoint-up(large) {
             grid-area: social;
+            justify-self: end;
         }
 
         img {
@@ -75,6 +79,9 @@ a {
 
     &__copyright {
         display: inline-block;
+        text-align: right;
+        align-self: end;
+        justify-self: end;
 
     }
 
