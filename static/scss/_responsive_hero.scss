@@ -9,6 +9,7 @@
   &__image {
     // overlay picture and adjust the position size
     position: relative;
+    //background-color: red;
     //background-image: url('static/images/nextGen.jpg');
     background-image: url($background-url-svg);
     background-size: cover;
