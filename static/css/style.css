@@ -582,6 +582,10 @@ button,
   margin-bottom: 1.75rem;
 }
 
+.features__icon img {
+  inline-size: 7rem;
+}
+
 @media (min-width: 1024px) {
   .features__icon {
     margin-bottom: 2.75rem;

@@ -36,6 +36,9 @@
 
     &__icon {
         margin-bottom: 1.75rem;
+        img{
+            inline-size: 7rem;
+        }
 
         @include breakpoint-up(large) {
             margin-bottom: 2.75rem;
