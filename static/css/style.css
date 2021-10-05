@@ -1,6 +1,6 @@
 @media (min-width: 1024px) {
   .reponsHero {
-    min-height: 42rem;
+    min-height: 49rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -12,7 +12,7 @@
 
 .reponsHero__image {
   position: relative;
-  background-image: url("images/qw.png");
+  text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -27,7 +27,7 @@
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    height: 41rem;
+    height: 49rem;
     background-position: left center;
   }
 }
@@ -38,15 +38,14 @@
   width: 10%;
   height: 28%;
   background-size: 93%;
-  background-image: url("images/b.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(100%);
-          transform: translateX(-50%) translateY(100%);
+  background-position: center bottom;
 }
 
 .reponsHero__text {
+  position: relative;
+  z-index: 10;
   text-align: center;
 }
 
@@ -58,7 +57,7 @@
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    height: 41rem;
+    height: 49rem;
     text-align: left;
   }
 }
@@ -110,7 +109,7 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
-  color: #9698a6;
+  color: #656464;
 }
 
 h1,
@@ -176,11 +175,11 @@ button,
   border: 0;
   border-radius: 50px;
   cursor: pointer;
-  background: -webkit-gradient(linear, left top, right top, from(lightgreen), to(#2bb7da));
-  background: linear-gradient(to right, lightgreen, #2bb7da);
+  background: -webkit-gradient(linear, left top, right top, from(#acd3ac), to(#c9a6a6));
+  background: linear-gradient(to right, #acd3ac, #c9a6a6);
   font-weight: 400;
   font-size: 0.875rem;
-  color: white;
+  opacity: 0.9;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
 }
@@ -637,10 +636,6 @@ button,
   }
 }
 
-a {
-  color: white;
-}
-
 .foot__logo {
   display: inline-block;
 }
@@ -695,6 +690,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   line-height: 2.25rem;
+}
+
+.foot__links a {
+  color: #2b2b2b;
 }
 
 @media (min-width: 1024px) {

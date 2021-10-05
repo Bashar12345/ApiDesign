@@ -37,7 +37,8 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
-  color: $grayishblue;
+  color: rgb(101, 100, 100);
+  //color: $grayishblue;
 }
 
 h1,
@@ -93,10 +94,11 @@ button,
   border: 0;
   border-radius: 50px;
   cursor: pointer;
-  background: linear-gradient(to right, lightgreen, $brightcyan);
+  background: linear-gradient(to right, rgb(172, 211, 172),rgb(201, 166, 166));
   font-weight: 400;
   font-size: $font-sm;
-  color: white;
+  opacity: 0.9;
+  //color: white;
   transition: opacity 300ms ease-in-out;
 }
 
@@ -110,6 +112,7 @@ button,
 .hide-for-desktop {
   @include breakpoint-up(large) {
     display: none;
+    
   }
 }
 
