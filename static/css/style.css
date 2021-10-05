@@ -1,6 +1,6 @@
 @media (min-width: 1024px) {
   .reponsHero {
-    min-height: 49rem;
+    min-height: 48rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -13,6 +13,7 @@
 .reponsHero__image {
   position: relative;
   text-align: center;
+  background-color: rgba(0, 175, 255, 0.1);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -27,7 +28,9 @@
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    height: 49rem;
+    min-width: 100.1875rem;
+    min-height: 47.6875rem;
+    height: 48rem;
     background-position: left center;
   }
 }
@@ -47,6 +50,7 @@
   position: relative;
   z-index: 10;
   text-align: center;
+  background-color: rgba(0, 175, 255, 0.1);
 }
 
 @media (min-width: 1024px) {
@@ -57,7 +61,7 @@
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    height: 49rem;
+    height: 47.6875rem;
     text-align: left;
   }
 }
@@ -325,6 +329,156 @@ button,
 .fade-out {
   -webkit-animation: fade-out 200ms ease-in-out forwards;
           animation: fade-out 200ms ease-in-out forwards;
+}
+
+#rocket {
+  -webkit-animation: rocket 10s infinite linear;
+          animation: rocket 10s infinite linear;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes rocket {
+  from {
+    -webkit-transform: matrix(1.8, -0.5, 0.2, 0.8, 0, 0);
+            transform: matrix(1.8, -0.5, 0.2, 0.8, 0, 0);
+  }
+  to {
+    -webkit-transform: translate(-250px, -450px);
+            transform: translate(-250px, -450px);
+  }
+}
+
+@keyframes rocket {
+  from {
+    -webkit-transform: matrix(1.8, -0.5, 0.2, 0.8, 0, 0);
+            transform: matrix(1.8, -0.5, 0.2, 0.8, 0, 0);
+  }
+  to {
+    -webkit-transform: translate(-250px, -450px);
+            transform: translate(-250px, -450px);
+  }
+}
+
+#male_hand {
+  -webkit-animation: m_hand 1s infinite linear;
+          animation: m_hand 1s infinite linear;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes m_hand {
+  from {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(45deg);
+            transform: rotateY(45deg);
+  }
+}
+
+@keyframes m_hand {
+  from {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(45deg);
+            transform: rotateY(45deg);
+  }
+}
+
+#female_head {
+  -webkit-animation: f_head 3s infinite linear;
+          animation: f_head 3s infinite linear;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes f_head {
+  from {
+    -webkit-transform: rotateX(-10deg);
+            transform: rotateX(-10deg);
+  }
+  to {
+    -webkit-transform: rotateY(10deg);
+            transform: rotateY(10deg);
+  }
+}
+
+@keyframes f_head {
+  from {
+    -webkit-transform: rotateX(-10deg);
+            transform: rotateX(-10deg);
+  }
+  to {
+    -webkit-transform: rotateY(10deg);
+            transform: rotateY(10deg);
+  }
+}
+
+#female_hand {
+  -webkit-animation: f_hand 1s infinite linear;
+          animation: f_hand 1s infinite linear;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes f_hand {
+  from {
+    -webkit-transform: rotateX(-5deg);
+            transform: rotateX(-5deg);
+  }
+  to {
+    -webkit-transform: rotateY(15deg);
+            transform: rotateY(15deg);
+  }
+}
+
+@keyframes f_hand {
+  from {
+    -webkit-transform: rotateX(-5deg);
+            transform: rotateX(-5deg);
+  }
+  to {
+    -webkit-transform: rotateY(15deg);
+            transform: rotateY(15deg);
+  }
+}
+
+#students_giving_exam {
+  -webkit-animation: std_exam 2s infinite linear;
+          animation: std_exam 2s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes std_exam {
+  from {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  to {
+    -webkit-transform: rotateX(5deg);
+            transform: rotateX(5deg);
+  }
+}
+
+@keyframes std_exam {
+  from {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  to {
+    -webkit-transform: rotateX(5deg);
+            transform: rotateX(5deg);
+  }
 }
 
 .header nav {

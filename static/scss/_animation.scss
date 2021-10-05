@@ -43,3 +43,101 @@
     animation: fade-out 200ms ease-in-out forwards;
 }
 
+
+
+
+
+
+#rocket {
+    animation: rocket 10s infinite linear;
+    //transform: rotateX(-90deg);
+    //transform: scale(2);
+    transform-origin: left;
+    transform-box: fill-box;
+
+}
+
+@keyframes rocket {
+    from { 
+        
+        //transform: translateX(5px);
+        transform: matrix(1.8, -0.5, 0.2, 0.8,0,0);
+        
+    }
+
+    to {
+        transform: translate(-250px,-450px);
+
+    }
+}
+
+#male_hand {
+    animation: m_hand 1s infinite linear;
+    transform-origin: left;
+    transform-box: fill-box;
+
+}
+
+@keyframes m_hand {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateY(45deg);
+
+    }
+}
+
+#female_head {
+    animation: f_head 3s infinite linear;
+    transform-origin: left;
+    transform-box: fill-box;
+
+}
+
+@keyframes f_head {
+    from {
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        transform: rotateY(10deg);
+
+    }
+}
+
+#female_hand {
+    animation: f_hand 1s infinite linear;
+    transform-origin: left;
+    transform-box: fill-box;
+
+}
+
+@keyframes f_hand {
+    from {
+        transform: rotateX(-5deg);
+    }
+
+    to {
+        transform: rotateY(15deg);
+
+    }
+}
+
+#students_giving_exam {
+    animation: std_exam 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes std_exam {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(5deg);
+
+    }
+}

@@ -1,7 +1,7 @@
 .reponsHero {
 
   @include breakpoint-up(large) {
-    min-height: 49rem;
+    min-height: 48rem;
     display: flex;
     align-items: center;
   }
@@ -12,7 +12,7 @@
    
     position: relative;
     text-align: center;
-    //background-color: red;
+    background-color: rgba(0, 175, 255, 0.1);
     //background-image: url('static/images/nextGen.jpg');
     //background-image: url($background-url-svg);
     background-size: cover;
@@ -22,22 +22,11 @@
     @include breakpoint-up(large) {
       flex: 3;
       order: 2;
-      height: 49rem;
+      min-width: 100.1875rem;
+      min-height: 47.6875rem;
+      height: 48rem;
       background-position: left center;
     }
-
-
-
-    // .text {
-    //   text-align: left;
-    //   top: 5vh;
-    //   right: 5vw;
-    //   z-index: 1000;
-    //   position: relative;
-    //   //z-index: 10;
-    // }
-
-
 
     &::before {
       content: "";
@@ -61,11 +50,12 @@
     position: relative;
     z-index: 10;
     text-align: center;
+    background-color: rgba(0, 175, 255, 0.1);
 
     @include breakpoint-up(large) {
       flex: 2;
       order: 1;
-      height: 49rem;
+      height: 47.6875rem;
       text-align: left;
 
     }
