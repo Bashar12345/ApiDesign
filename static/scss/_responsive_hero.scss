@@ -28,18 +28,19 @@
       background-position: left center;
     }
 
+
     &::before {
       content: "";
       position: absolute;
       width: 10%;
       height: 28%;
       background-size: 93%;
-      //background-image: url($background-url-img);
+      background-image: url($background-url-img);
       background-repeat: no-repeat;
       background-position: center bottom;
       background-position: center bottom;
-      //left: 50%;
-      //transform: translateX(-50%) translateY(100%);
+      left: 50%;
+      transform: translateX(-50%) translateY(100%);
 
       
 
