@@ -372,12 +372,12 @@ button,
 
 @-webkit-keyframes fire_rocket {
   from {
-    -webkit-transform: scale(1.1) rotateX(20deg);
-            transform: scale(1.1) rotateX(20deg);
+    -webkit-transform: scale(1.03) rotateX(20deg);
+            transform: scale(1.03) rotateX(20deg);
   }
   5% {
-    -webkit-transform: scale(1.13);
-            transform: scale(1.13);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   9% {
     -webkit-transform: scale(0.905) rotate(17deg, 2deg);
@@ -386,14 +386,6 @@ button,
   15% {
     -webkit-transform: scale(1) rotate(16deg, 5deg);
             transform: scale(1) rotate(16deg, 5deg);
-  }
-  19% {
-    -webkit-transform: scale(1.15) rotate(14deg, 8deg);
-            transform: scale(1.15) rotate(14deg, 8deg);
-  }
-  25% {
-    -webkit-transform: scale(1.1) rotate(10deg, 15deg);
-            transform: scale(1.1) rotate(10deg, 15deg);
   }
   35% {
     -webkit-transform: scale(1.35) rotate(8deg, 25deg);
@@ -432,23 +424,23 @@ button,
             transform: scale(1.19);
   }
   85% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    -webkit-transform: scale(0.93);
+            transform: scale(0.93);
   }
   to {
-    -webkit-transform: scale(0.9) rotate(5deg);
-            transform: scale(0.9) rotate(5deg);
+    -webkit-transform: scale(0.85) rotate(5deg);
+            transform: scale(0.85) rotate(5deg);
   }
 }
 
 @keyframes fire_rocket {
   from {
-    -webkit-transform: scale(1.1) rotateX(20deg);
-            transform: scale(1.1) rotateX(20deg);
+    -webkit-transform: scale(1.03) rotateX(20deg);
+            transform: scale(1.03) rotateX(20deg);
   }
   5% {
-    -webkit-transform: scale(1.13);
-            transform: scale(1.13);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   9% {
     -webkit-transform: scale(0.905) rotate(17deg, 2deg);
@@ -457,14 +449,6 @@ button,
   15% {
     -webkit-transform: scale(1) rotate(16deg, 5deg);
             transform: scale(1) rotate(16deg, 5deg);
-  }
-  19% {
-    -webkit-transform: scale(1.15) rotate(14deg, 8deg);
-            transform: scale(1.15) rotate(14deg, 8deg);
-  }
-  25% {
-    -webkit-transform: scale(1.1) rotate(10deg, 15deg);
-            transform: scale(1.1) rotate(10deg, 15deg);
   }
   35% {
     -webkit-transform: scale(1.35) rotate(8deg, 25deg);
@@ -503,12 +487,153 @@ button,
             transform: scale(1.19);
   }
   85% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    -webkit-transform: scale(0.93);
+            transform: scale(0.93);
   }
   to {
-    -webkit-transform: scale(0.9) rotate(5deg);
-            transform: scale(0.9) rotate(5deg);
+    -webkit-transform: scale(0.85) rotate(5deg);
+            transform: scale(0.85) rotate(5deg);
+  }
+}
+
+#star {
+  transform-box: fill-box;
+}
+
+#star #star_1 {
+  -webkit-animation: star 5s infinite;
+          animation: star 5s infinite;
+}
+
+#star #star_2 {
+  -webkit-animation: star 8s infinite;
+          animation: star 8s infinite;
+}
+
+#star #star_3 {
+  -webkit-animation: star 3s infinite;
+          animation: star 3s infinite;
+}
+
+#star #star_4 {
+  -webkit-animation: star 4s infinite;
+          animation: star 4s infinite;
+}
+
+#star #star_5 {
+  -webkit-animation: star 5s infinite;
+          animation: star 5s infinite;
+}
+
+#star #star_6 {
+  -webkit-animation: star 6s infinite;
+          animation: star 6s infinite;
+}
+
+#star #star_7 {
+  -webkit-animation: star 4s infinite;
+          animation: star 4s infinite;
+}
+
+#star #star_8 {
+  -webkit-animation: star 8s infinite;
+          animation: star 8s infinite;
+}
+
+#star #star_9 {
+  -webkit-animation: star 9s infinite;
+          animation: star 9s infinite;
+}
+
+#star #star_10 {
+  -webkit-animation: star 2s infinite;
+          animation: star 2s infinite;
+}
+
+#star #star_11 {
+  -webkit-animation: star 6s infinite;
+          animation: star 6s infinite;
+}
+
+#star #star_12 {
+  -webkit-animation: star 3s infinite;
+          animation: star 3s infinite;
+}
+
+#star #star_13 {
+  -webkit-animation: star 1s infinite;
+          animation: star 1s infinite;
+}
+
+#star #star_14 {
+  -webkit-animation: star 9s infinite;
+          animation: star 9s infinite;
+}
+
+#ellipse {
+  transform-box: fill-box;
+}
+
+#ellipse #ellipse_1 {
+  -webkit-animation: star 5s infinite;
+          animation: star 5s infinite;
+}
+
+#ellipse #ellipse_2 {
+  -webkit-animation: star 8s infinite;
+          animation: star 8s infinite;
+}
+
+#ellipse #ellipse_3 {
+  -webkit-animation: star 3s infinite;
+          animation: star 3s infinite;
+}
+
+#ellipse #ellipse_4 {
+  -webkit-animation: star 4s infinite;
+          animation: star 4s infinite;
+}
+
+#ellipse #ellipse_5 {
+  -webkit-animation: star 5s infinite;
+          animation: star 5s infinite;
+}
+
+#ellipse #ellipse_6 {
+  -webkit-animation: star 6s infinite;
+          animation: star 6s infinite;
+}
+
+#ellipse #ellipse_7 {
+  -webkit-animation: star 4s infinite;
+          animation: star 4s infinite;
+}
+
+#ellipse #ellipse_8 {
+  -webkit-animation: star 8s infinite;
+          animation: star 8s infinite;
+}
+
+#ellipse #ellipse_9 {
+  -webkit-animation: star 9s infinite;
+          animation: star 9s infinite;
+}
+
+@-webkit-keyframes star {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+
+@keyframes star {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.1;
   }
 }
 
