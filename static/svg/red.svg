@@ -1,7 +1,7 @@
-<svg width="1603" height="763" viewBox="0 0 1603 763" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg  viewBox="0 0 1603 763" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect width="1603" height="763" fill="white"/>
 <g id="back_galaxy" clip-path="url(#clip0)">
-<rect width="1603" height="763" fill="white"/>
+    <rect width="1603" height="763" fill="rgba(0,176,255,10%)" />
 <g id="tree">
 <path id="Vector" d="M39.9396 760.989C48.7593 760.989 55.9091 759.926 55.9091 758.615C55.9091 757.304 48.7593 756.241 39.9396 756.241C31.1199 756.241 23.9701 757.304 23.9701 758.615C23.9701 759.926 31.1199 760.989 39.9396 760.989Z" fill="#00B0FF"/>
 <path id="Vector_2" d="M39.6719 759.489C40.6974 759.489 41.5288 758.646 41.5288 757.605C41.5288 756.565 40.6974 755.721 39.6719 755.721C38.6463 755.721 37.8149 756.565 37.8149 757.605C37.8149 758.646 38.6463 759.489 39.6719 759.489Z" fill="#3F3D56"/>
