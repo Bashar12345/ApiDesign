@@ -3,42 +3,48 @@
 }
 
 @keyframes fade-in {
-    from{
+    from {
         visibility: hidden;
         opacity: 0;
 
     }
-    1%{
+
+    1% {
         visibility: visible;
-     
+
         opacity: 0;
     }
-    to{
+
+    to {
         visibility: visible;
         opacity: 1;
 
     }
 }
+
 .fade-in {
     animation: fade-in 200ms ease-in-out forwards;
 }
 
-@keyframes fade-out{
-    from{
-       // display: none; display actually not work in animation
-       visibility: visible;
+@keyframes fade-out {
+    from {
+        // display: none; display actually not work in animation
+        visibility: visible;
         opacity: 1;
     }
-    99%{
+
+    99% {
         visibility: visible;
         opacity: 0;
     }
-    to{
+
+    to {
         visibility: visible;
         opacity: 0;
 
     }
 }
+
 .fade-out {
     animation: fade-out 200ms ease-in-out forwards;
 }
@@ -55,21 +61,141 @@
     transform-origin: left;
     transform-box: fill-box;
 
+    #fire_rocket {
+        
+        transform-box: fill-box;
+        animation: fire_rocket 10s infinite;
+        //translate(10px, 0px);
+    }
 }
 
+
 @keyframes rocket {
-    from { 
-        
+    from {
         //transform: translateX(5px);
-        transform: matrix(1.8, -0.5, 0.2, 0.8,0,0);
-        
+        transform: matrix(1.8, -0.5, 0.2, 0.8, 0, 0);
+
     }
 
     to {
-        transform: translate(-250px,-450px);
+        transform: translate(-250px, -450px);
 
     }
 }
+
+// #fire_rocket{
+//     animation: fire_rocket 10s infinite linear;
+
+//     transform-origin: left;
+//     transform-box: fill-box;
+// }
+
+
+
+@keyframes fire_rocket {
+    from {
+        transform: scale(1.1) rotateX(20deg);
+    }
+    5% {
+        transform: scale(1.13);
+    }
+    9% {
+        transform: scale(0.905) rotate(17deg,2deg);
+    }
+    15% {
+        transform: scale(1) rotate(16deg, 5deg);
+    }
+    19% {
+        transform: scale(1.15) rotate(14deg, 8deg);
+    }
+    25% {
+        transform: scale(1.1) rotate(10deg, 15deg);
+    }
+    35% {
+        transform: scale(1.35) rotate(8deg, 25deg);
+    }
+    45% {
+        transform: scale(1.25) rotate(4deg, 33deg);
+    }
+
+    50% {
+        transform: scale(1.45) rotateY(40deg);        
+    }
+    55% {
+        transform: scale(1.35);
+    }
+    59% {
+        transform: scale(1.38);
+    }
+    65% {
+        transform: scale(1.25);
+    }
+    69% {
+        transform: scale(1.29);
+    }
+    75% {
+        transform: scale(1.15);
+    }
+    79%{
+        transform: scale(1.19);
+    }
+    85% {
+        transform: scale(1.05);
+    }
+
+    to {
+        transform: scale(.9) rotate(5deg);
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @keyframes fire_rocket {
+//     from {
+//         //transform: translateX(5px);
+//         transform: scale(4);
+
+//     }
+
+//     to {
+//         transform: scale(0.5);
+
+//     }
+// }
+
+
 
 #male_hand {
     animation: m_hand 1s infinite linear;
