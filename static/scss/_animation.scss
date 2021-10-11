@@ -102,39 +102,24 @@
     }
 
     35% {
-        transform: scale(1.35) rotate(8deg, 25deg);
+        transform:
+            scale(1.35) rotate(8deg, 15deg);
     }
 
     45% {
-        transform: scale(1.25) rotate(4deg, 33deg);
+        transform: scale(1.25) rotate(4deg, 30deg);
     }
 
     50% {
-        transform: scale(1.45) rotateY(40deg);
-    }
-
-    55% {
-        transform: scale(1.35);
-    }
-
-    59% {
-        transform: scale(1.38);
+        transform: scale(1.30) rotateY(35deg);
     }
 
     65% {
-        transform: scale(1.25);
-    }
-
-    69% {
-        transform: scale(1.29);
+        transform: scale(1.35) rotateY(40deg);
     }
 
     75% {
-        transform: scale(1.15);
-    }
-
-    79% {
-        transform: scale(1.19);
+        transform: scale(1.18);
     }
 
     85% {
@@ -150,58 +135,64 @@
 
 
 #star {
-    //animation: star 5s infinite;
+    animation: blackhole 120s infinite;
     transform-box: fill-box;
 
     #star_1 {
         animation: star 5s infinite;
     }
+
     #star_2 {
         animation: star 8s infinite;
     }
+
     #star_3 {
         animation: star 3s infinite;
     }
+
     #star_4 {
         animation: star 4s infinite;
     }
+
     #star_5 {
         animation: star 5s infinite;
     }
+
     #star_6 {
         animation: star 6s infinite;
     }
+
     #star_7 {
         animation: star 4s infinite;
     }
-    #star_8{
+
+    #star_8 {
         animation: star 8s infinite;
     }
-    #star_9{
+
+    #star_9 {
         animation: star 9s infinite;
     }
+
     #star_10 {
         animation: star 2s infinite;
     }
+
     #star_11 {
         animation: star 6s infinite;
     }
+
     #star_12 {
         animation: star 3s infinite;
     }
+
     #star_13 {
         animation: star 1s infinite;
     }
+
     #star_14 {
         animation: star 9s infinite;
     }
-
-}
-
-
-#ellipse {
-    //animation: star 5s infinite;
-    transform-box: fill-box;
 
     #ellipse_1 {
         animation: star 5s infinite;
@@ -236,7 +227,19 @@
     }
 
     #ellipse_9 {
+        animation: star 10s infinite;
+    }
+
+    #ellipse_11 {
         animation: star 9s infinite;
+    }
+
+  #ellipse_14 {
+      animation: fall 45s alternate-reverse infinite;
+  }
+
+    #ellipse_15 {
+        animation: star 7s infinite;
     }
 
 }
@@ -254,8 +257,36 @@
     }
 }
 
+@keyframes fall {
+    from {
+        transform: translate(20px, -30px);
+        
+
+    }
+    to {
+        transform: translate(-100px,350px);
+
+    }
+}
 
 
+#blackhole {
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: rotateY(-60deg);
+    animation: blackhole 35s infinite linear;
+
+}
+
+@keyframes blackhole {
+    from {
+        transform: rotate(0deg) translateX(25px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(25px) rotate(-360deg);
+    }
+}
 
 
 

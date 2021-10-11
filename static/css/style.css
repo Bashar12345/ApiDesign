@@ -388,40 +388,24 @@ button,
             transform: scale(1) rotate(16deg, 5deg);
   }
   35% {
-    -webkit-transform: scale(1.35) rotate(8deg, 25deg);
-            transform: scale(1.35) rotate(8deg, 25deg);
+    -webkit-transform: scale(1.35) rotate(8deg, 15deg);
+            transform: scale(1.35) rotate(8deg, 15deg);
   }
   45% {
-    -webkit-transform: scale(1.25) rotate(4deg, 33deg);
-            transform: scale(1.25) rotate(4deg, 33deg);
+    -webkit-transform: scale(1.25) rotate(4deg, 30deg);
+            transform: scale(1.25) rotate(4deg, 30deg);
   }
   50% {
-    -webkit-transform: scale(1.45) rotateY(40deg);
-            transform: scale(1.45) rotateY(40deg);
-  }
-  55% {
-    -webkit-transform: scale(1.35);
-            transform: scale(1.35);
-  }
-  59% {
-    -webkit-transform: scale(1.38);
-            transform: scale(1.38);
+    -webkit-transform: scale(1.3) rotateY(35deg);
+            transform: scale(1.3) rotateY(35deg);
   }
   65% {
-    -webkit-transform: scale(1.25);
-            transform: scale(1.25);
-  }
-  69% {
-    -webkit-transform: scale(1.29);
-            transform: scale(1.29);
+    -webkit-transform: scale(1.35) rotateY(40deg);
+            transform: scale(1.35) rotateY(40deg);
   }
   75% {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
-  }
-  79% {
-    -webkit-transform: scale(1.19);
-            transform: scale(1.19);
+    -webkit-transform: scale(1.18);
+            transform: scale(1.18);
   }
   85% {
     -webkit-transform: scale(0.93);
@@ -451,40 +435,24 @@ button,
             transform: scale(1) rotate(16deg, 5deg);
   }
   35% {
-    -webkit-transform: scale(1.35) rotate(8deg, 25deg);
-            transform: scale(1.35) rotate(8deg, 25deg);
+    -webkit-transform: scale(1.35) rotate(8deg, 15deg);
+            transform: scale(1.35) rotate(8deg, 15deg);
   }
   45% {
-    -webkit-transform: scale(1.25) rotate(4deg, 33deg);
-            transform: scale(1.25) rotate(4deg, 33deg);
+    -webkit-transform: scale(1.25) rotate(4deg, 30deg);
+            transform: scale(1.25) rotate(4deg, 30deg);
   }
   50% {
-    -webkit-transform: scale(1.45) rotateY(40deg);
-            transform: scale(1.45) rotateY(40deg);
-  }
-  55% {
-    -webkit-transform: scale(1.35);
-            transform: scale(1.35);
-  }
-  59% {
-    -webkit-transform: scale(1.38);
-            transform: scale(1.38);
+    -webkit-transform: scale(1.3) rotateY(35deg);
+            transform: scale(1.3) rotateY(35deg);
   }
   65% {
-    -webkit-transform: scale(1.25);
-            transform: scale(1.25);
-  }
-  69% {
-    -webkit-transform: scale(1.29);
-            transform: scale(1.29);
+    -webkit-transform: scale(1.35) rotateY(40deg);
+            transform: scale(1.35) rotateY(40deg);
   }
   75% {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
-  }
-  79% {
-    -webkit-transform: scale(1.19);
-            transform: scale(1.19);
+    -webkit-transform: scale(1.18);
+            transform: scale(1.18);
   }
   85% {
     -webkit-transform: scale(0.93);
@@ -497,6 +465,8 @@ button,
 }
 
 #star {
+  -webkit-animation: blackhole 120s infinite;
+          animation: blackhole 120s infinite;
   transform-box: fill-box;
 }
 
@@ -570,53 +540,63 @@ button,
           animation: star 9s infinite;
 }
 
-#ellipse {
-  transform-box: fill-box;
-}
-
-#ellipse #ellipse_1 {
+#star #ellipse_1 {
   -webkit-animation: star 5s infinite;
           animation: star 5s infinite;
 }
 
-#ellipse #ellipse_2 {
+#star #ellipse_2 {
   -webkit-animation: star 8s infinite;
           animation: star 8s infinite;
 }
 
-#ellipse #ellipse_3 {
+#star #ellipse_3 {
   -webkit-animation: star 3s infinite;
           animation: star 3s infinite;
 }
 
-#ellipse #ellipse_4 {
+#star #ellipse_4 {
   -webkit-animation: star 4s infinite;
           animation: star 4s infinite;
 }
 
-#ellipse #ellipse_5 {
+#star #ellipse_5 {
   -webkit-animation: star 5s infinite;
           animation: star 5s infinite;
 }
 
-#ellipse #ellipse_6 {
+#star #ellipse_6 {
   -webkit-animation: star 6s infinite;
           animation: star 6s infinite;
 }
 
-#ellipse #ellipse_7 {
+#star #ellipse_7 {
   -webkit-animation: star 4s infinite;
           animation: star 4s infinite;
 }
 
-#ellipse #ellipse_8 {
+#star #ellipse_8 {
   -webkit-animation: star 8s infinite;
           animation: star 8s infinite;
 }
 
-#ellipse #ellipse_9 {
+#star #ellipse_9 {
+  -webkit-animation: star 10s infinite;
+          animation: star 10s infinite;
+}
+
+#star #ellipse_11 {
   -webkit-animation: star 9s infinite;
           animation: star 9s infinite;
+}
+
+#star #ellipse_14 {
+  animation: fall 45s alternate-reverse infinite;
+}
+
+#star #ellipse_15 {
+  -webkit-animation: star 7s infinite;
+          animation: star 7s infinite;
 }
 
 @-webkit-keyframes star {
@@ -634,6 +614,60 @@ button,
   }
   to {
     opacity: 0.1;
+  }
+}
+
+@-webkit-keyframes fall {
+  from {
+    -webkit-transform: translate(20px, -30px);
+            transform: translate(20px, -30px);
+  }
+  to {
+    -webkit-transform: translate(-100px, 350px);
+            transform: translate(-100px, 350px);
+  }
+}
+
+@keyframes fall {
+  from {
+    -webkit-transform: translate(20px, -30px);
+            transform: translate(20px, -30px);
+  }
+  to {
+    -webkit-transform: translate(-100px, 350px);
+            transform: translate(-100px, 350px);
+  }
+}
+
+#blackhole {
+  transform-box: fill-box;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotateY(-60deg);
+          transform: rotateY(-60deg);
+  -webkit-animation: blackhole 35s infinite linear;
+          animation: blackhole 35s infinite linear;
+}
+
+@-webkit-keyframes blackhole {
+  from {
+    -webkit-transform: rotate(0deg) translateX(25px) rotate(0deg);
+            transform: rotate(0deg) translateX(25px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(25px) rotate(-360deg);
+            transform: rotate(360deg) translateX(25px) rotate(-360deg);
+  }
+}
+
+@keyframes blackhole {
+  from {
+    -webkit-transform: rotate(0deg) translateX(25px) rotate(0deg);
+            transform: rotate(0deg) translateX(25px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(25px) rotate(-360deg);
+            transform: rotate(360deg) translateX(25px) rotate(-360deg);
   }
 }
 
