@@ -943,9 +943,8 @@ button,
 }
 
 .article__image {
-  height: 12.3rem;
-  background-size: cover;
-  background-image: url("images/pic_article.png");
+  min-width: 300px;
+  min-height: 150px;
   background-position: center center;
 }
 

@@ -37,9 +37,10 @@
   }
 
   &__image {
-    height: 12.3rem;
-    background-size: cover;
-    background-image: url($article-pic);
+    min-width: 300px;
+    min-height: 150px;
+    //background-size: cover;
+    //background-image: url($article-pic);
     background-position: center center;
   }
 

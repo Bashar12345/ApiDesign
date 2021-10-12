@@ -47,9 +47,9 @@ def get_url(response):
 
 
 def download_image(url, date):
-    if os.path.isfile(f'{date}.png') == False:
+    if os.path.isfile(f'static/temp/{date}.jpg') == False:
         raw_image = requests.get(url).content
-        with open(f'{date}.jpg', 'wb') as file:
+        with open(f'static/temp/{date}.jpg', 'wb') as file:
             file.write(raw_image)
 
     else:
@@ -66,4 +66,5 @@ def convert_image(image_path):
     base_directory = os.path.dirname(path_to_image)
 
     image = Image.open(path_to_image)
-    image.save(f"{base_directory}/{filename_no_extension}.png")
+    #image.save(f"{base_directory}/{filename_no_extension}.png")
+    image.save(f"static/image/{filename_no_extension}.png")
