@@ -35,7 +35,19 @@ def science():
       return render_template('science.html')
 
 
+@app.route('/qu')
+def qu():
+    return render_template('qu.html')
 
+
+@app.route('/haddit')
+def haddit():
+    return render_template('haddit.html')
+
+
+@app.route('/history')
+def history():
+    return render_template('history.html')
 
 
 
