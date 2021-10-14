@@ -4,45 +4,23 @@ import json
 import os
 from PIL import Image
 #import datetime
-from datetime import datetime, timedelta,date
 
 
-def get_data(api_key):
+
+
+def get_data(api_key, d_date):
     # raw_response = requests.get(
     #     f'https://api.nasa.gov/planetary/apod?api_key={api_key}').text
     # response = json.loads(raw_response)
-    #d = datetime.date.today()
-    #da = datetime.datetime.now()
-    #print(" Todays date ", d)
 
-    # taking input as the date
-    Begindatestring = datetime.date.today()
-
-# carry out conversion between string
-# to datetime object
-    #Begindate = datetime.strptime(Begindatestring, "%Y-%m-%d")
-
-
-# print begin date
-    print("Beginning date", Begindatestring)
-    #print(Begindate)
-
-
-# calculating end date by adding 10 days
-    #Enddate = Begindate + timedelta(days=10)
-
-# printing end date
-    print("Ending date")
-    #print(Enddate)
     raw_response = requests.get(
-        f'https://api.nasa.gov/planetary/apod?api_key={api_key}&date=1995-06-16').text
+        f'https://api.nasa.gov/planetary/apod?api_key={api_key}&date={d_date}').text
     response = json.loads(raw_response)
 
     return response
 
 
 def get_date(response):
-
     date = response['date']
     return date
 

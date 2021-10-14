@@ -902,6 +902,8 @@ button,
 
 .article__content {
   padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   padding-bottom: 2.5rem;
 }
 
@@ -915,8 +917,8 @@ button,
 
 @media (min-width: 1024px) {
   .article__grid {
-    -ms-grid-columns: (fr)[4];
-        grid-template-columns: repeat(4, fr);
+    -ms-grid-columns: (fr)[3];
+        grid-template-columns: repeat(3, fr);
   }
 }
 
@@ -943,12 +945,14 @@ button,
 }
 
 .article__image {
-  min-width: 300px;
-  min-height: 150px;
+  width: 37.5rem;
+  height: 26.25rem;
+  background-size: cover;
   background-position: center center;
 }
 
 .article__text {
+  color: white;
   background-color: white;
   padding: 1.825rem 1.825rem 2.5rem 1.825rem;
 }
