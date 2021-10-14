@@ -29,6 +29,26 @@ def index():
 
     return render_template("index.html", present_date=present_date, yesterday=yesterday, nasa_api=nasa_api, previous_nasa_api_response=previous_nasa_api_response,nasa_api_response=nasa_api_response)
 
+
+@app.route('/science')
+def science():
+      return render_template('science.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   #d = datetime.date.today()
     #da = datetime.datetime.now()
     #print(" Todays date ", d)
