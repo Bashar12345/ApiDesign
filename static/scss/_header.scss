@@ -2,9 +2,18 @@
   nav {
     padding-top: 1.0625rem;
     padding-bottom: 1.0525rem;
-    position: relative;
+    position: inherit;
+    // position: fixed ;
+    // top: 0;
+    // width: 100%;
+    // z-index: 10;
    background-color: azure;
   
+  }
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 
   ///menu open styles.......

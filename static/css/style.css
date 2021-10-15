@@ -794,8 +794,14 @@ button,
 .header nav {
   padding-top: 1.0625rem;
   padding-bottom: 1.0525rem;
-  position: relative;
+  position: inherit;
   background-color: azure;
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .header.open .header__toggle span:first-child {
