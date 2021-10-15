@@ -795,6 +795,10 @@ button,
   }
 }
 
+.header {
+  margin-top: 5.26rem;
+}
+
 .header nav {
   padding-top: 1.0625rem;
   padding-bottom: 1.0525rem;
@@ -909,11 +913,22 @@ button,
   transition: opacity 300ms ease-in-out;
 }
 
-.contents__items {
-  position: relative;
+.contents {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.contents__grid {
+.contents .content__items {
+  position: relative;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 2rem;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contents .content__grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(14.375rem, 1fr))[auto-fit];
@@ -923,45 +938,43 @@ button,
 }
 
 @media (min-width: 1024px) {
-  .contents__grid {
-    -ms-grid-columns: (fr)[4];
-        grid-template-columns: repeat(4, fr);
+  .contents .content__grid {
+    -ms-grid-columns: (fr)[3];
+        grid-template-columns: repeat(3, fr);
   }
 }
 
 @media (min-width: 640px) {
-  .contents__grid {
+  .contents .content__grid {
     -ms-grid-columns: (fr)[2];
         grid-template-columns: repeat(2, fr);
   }
 }
 
-.contents__text {
+.contents .content__text {
   color: white;
   background-color: white;
   padding: 1.825rem 1.825rem 2.5rem 1.825rem;
 }
 
 @media (min-width: 640px) {
-  .contents__text {
+  .contents .content__text {
     padding: 1.856rem 1.6667rem;
   }
 }
 
-.contents__title {
+.contents .content__title {
   font-size: 1.0234rem;
   margin-bottom: 1rem;
-  -webkit-text-decoration: wavy;
-          text-decoration: wavy;
 }
 
-.contents__description {
-  color: beige;
+.contents .content__description {
+  color: #404040;
   font-size: 0.834rem;
 }
 
 .articles {
-  background-color: #f4f4f4;
+  background-color: #eaeffa;
 }
 
 .article__content {
@@ -1149,7 +1162,7 @@ button,
 }
 
 .footer {
-  background-color: darkolivegreen;
+  background-color: #cce6ff;
   color: white;
   padding: 2.5rem 2.5rem 3.5rem 2.5rem;
   text-align: center;
