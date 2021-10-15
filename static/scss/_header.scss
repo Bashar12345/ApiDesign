@@ -2,14 +2,15 @@
   nav {
     padding-top: 1.0625rem;
     padding-bottom: 1.0525rem;
-    position: inherit;
-    // position: fixed ;
-    // top: 0;
-    // width: 100%;
-    // z-index: 10;
-   background-color: azure;
-  
+    //margin-left: 25%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: azure;
+
   }
+
   &.sticky {
     position: fixed;
     top: 0;
@@ -114,7 +115,7 @@
         content: "";
         position: absolute;
         height: 4px;
-       // background: linear-gradient(to right, limegreen, lightblue);
+        // background: linear-gradient(to right, limegreen, lightblue);
         left: 0px;
         right: 0px;
         bottom: -35px;

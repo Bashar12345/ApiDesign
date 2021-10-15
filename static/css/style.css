@@ -1,3 +1,7 @@
+.reponsHero {
+  margin-top: 5.26rem;
+}
+
 @media (min-width: 1024px) {
   .reponsHero {
     min-height: 48rem;
@@ -794,7 +798,10 @@ button,
 .header nav {
   padding-top: 1.0625rem;
   padding-bottom: 1.0525rem;
-  position: inherit;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   background-color: azure;
 }
 
@@ -900,6 +907,57 @@ button,
   opacity: 1;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
+}
+
+.contents__items {
+  position: relative;
+}
+
+.contents__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(14.375rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
+  gap: 1.85rem;
+  background-color: aliceblue;
+}
+
+@media (min-width: 1024px) {
+  .contents__grid {
+    -ms-grid-columns: (fr)[4];
+        grid-template-columns: repeat(4, fr);
+  }
+}
+
+@media (min-width: 640px) {
+  .contents__grid {
+    -ms-grid-columns: (fr)[2];
+        grid-template-columns: repeat(2, fr);
+  }
+}
+
+.contents__text {
+  color: white;
+  background-color: white;
+  padding: 1.825rem 1.825rem 2.5rem 1.825rem;
+}
+
+@media (min-width: 640px) {
+  .contents__text {
+    padding: 1.856rem 1.6667rem;
+  }
+}
+
+.contents__title {
+  font-size: 1.0234rem;
+  margin-bottom: 1rem;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+}
+
+.contents__description {
+  color: beige;
+  font-size: 0.834rem;
 }
 
 .articles {
