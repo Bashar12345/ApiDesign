@@ -50,7 +50,9 @@ def history():
     return render_template('history.html')
 
 
-
+@app.route('/local')
+def local():
+    return render_template('local.html')
 
 
 
