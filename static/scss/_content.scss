@@ -10,15 +10,16 @@
     }
     &.haddit_page {
         background-position: center left;
-        background-image: url($science_page);
+        background-image: url($haddit_page);
     }
     &.history_page {
-        background-position: center left;
-        background-image: url($science_page);
+        background-position: center center;
+        background-image: url($history_page);
     }
-    &.qu_page {
-        background-position: center left;
-        background-image: url($science_page);
+    &.qu_page {      
+        background-position: center center;
+        //background: rgba(255, 255, 255, 0.3)
+        background-image: url($qu_page);
     }
 
     .content {
@@ -35,7 +36,8 @@
         }
 
         &__grid {
-            opacity: 0.9;
+            z-index:10;
+            opacity: 0.8;
             filter: alpha(opacity=80);
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(26.375rem, 1fr));

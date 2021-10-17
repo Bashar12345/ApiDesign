@@ -926,17 +926,17 @@ button,
 
 .contents.haddit_page {
   background-position: center left;
-  background-image: url("images/qw.png");
+  background-image: url("images/haddit_page.png");
 }
 
 .contents.history_page {
-  background-position: center left;
-  background-image: url("images/qw.png");
+  background-position: center center;
+  background-image: url("images/history_page.png");
 }
 
 .contents.qu_page {
-  background-position: center left;
-  background-image: url("images/qw.png");
+  background-position: center center;
+  background-image: url("images/quran_page.png");
 }
 
 .contents .content__items {
@@ -950,7 +950,8 @@ button,
 }
 
 .contents .content__grid {
-  opacity: 0.9;
+  z-index: 10;
+  opacity: 0.8;
   filter: alpha(opacity=80);
   display: -ms-grid;
   display: grid;
