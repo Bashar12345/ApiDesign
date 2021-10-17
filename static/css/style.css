@@ -930,7 +930,7 @@ button,
 }
 
 .contents.history_page {
-  background-position: center center;
+  background-position: center bottom;
   background-image: url("images/history_page.png");
 }
 
