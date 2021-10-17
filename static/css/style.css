@@ -914,8 +914,29 @@ button,
 }
 
 .contents {
+  display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.contents.science_page {
+  background-position: center left;
+  background-image: url("images/qw.png");
+}
+
+.contents.haddit_page {
+  background-position: center left;
+  background-image: url("images/qw.png");
+}
+
+.contents.history_page {
+  background-position: center left;
+  background-image: url("images/qw.png");
+}
+
+.contents.qu_page {
+  background-position: center left;
+  background-image: url("images/qw.png");
 }
 
 .contents .content__items {
@@ -929,12 +950,13 @@ button,
 }
 
 .contents .content__grid {
+  opacity: 0.9;
+  filter: alpha(opacity=80);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(14.375rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
+  -ms-grid-columns: (minmax(26.375rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(26.375rem, 1fr));
   gap: 1.85rem;
-  background-color: aliceblue;
 }
 
 @media (min-width: 1024px) {

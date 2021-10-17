@@ -3,12 +3,12 @@
 {% block body %}
 science page
 
-<div class="contents">
+<div class="contents science_page" >
 
-    <div class="content">
+    <div class="content ">
    
     <div class="content__grid container">
-
+{% for i in range(0,10)%}
         <div class="content__items">
 
             <div class="content__title">
@@ -19,6 +19,8 @@ science page
                     and medicine.</p>
             </div>
         </div>
+{%endfor%}
+
     </div>
 </div>
 

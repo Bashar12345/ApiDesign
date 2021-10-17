@@ -1,6 +1,25 @@
 .contents {
-     box-sizing: border-box;
+    display: block;
+    box-sizing: border-box;
+
     //background-color: $lightgray;
+    //;
+    &.science_page {
+        background-position: center left; 
+        background-image: url($science_page);
+    }
+    &.haddit_page {
+        background-position: center left;
+        background-image: url($science_page);
+    }
+    &.history_page {
+        background-position: center left;
+        background-image: url($science_page);
+    }
+    &.qu_page {
+        background-position: center left;
+        background-image: url($science_page);
+    }
 
     .content {
         &__items {
@@ -11,15 +30,17 @@
             border-radius: 8px;
             padding: 2rem;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-             0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
         }
 
         &__grid {
+            opacity: 0.9;
+            filter: alpha(opacity=80);
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(26.375rem, 1fr));
             gap: 1.85rem;
-            background-color: aliceblue;
+            //background-color: aliceblue;
 
             @include breakpoint-up(large) {
                 grid-template-columns: repeat(3, fr);
