@@ -1,1 +1,0 @@
-from flask_alchemy import SQLAlchemy
