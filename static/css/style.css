@@ -802,17 +802,18 @@ button,
 .header nav {
   padding-top: 1.0625rem;
   padding-bottom: 1.0525rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
+  z-index: 100;
   background-color: azure;
 }
 
-.header.sticky {
+.header nav.sticky {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.header__nam {
+  text-align: center;
 }
 
 .header.open .header__toggle span:first-child {
@@ -939,24 +940,15 @@ button,
   background-image: url("images/quran_page.png");
 }
 
-.contents .content__items {
-  position: relative;
-  overflow: hidden;
-  background-color: #f2f2f2;
-  border-radius: 8px;
-  padding: 2rem;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .contents .content__grid {
+  display: -ms-grid;
+  display: grid;
   z-index: 10;
   opacity: 0.8;
   filter: alpha(opacity=80);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(26.375rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(26.375rem, 1fr));
+  -ms-grid-columns: (minmax(16.375rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(16.375rem, 1fr));
+  margin: 0.8rem;
   gap: 1.85rem;
 }
 
@@ -967,11 +959,14 @@ button,
   }
 }
 
-@media (min-width: 640px) {
-  .contents .content__grid {
-    -ms-grid-columns: (fr)[2];
-        grid-template-columns: repeat(2, fr);
-  }
+.contents .content__items {
+  position: relative;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 2rem;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contents .content__text {
@@ -1010,9 +1005,9 @@ button,
 .article__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(14.375rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
-  gap: 1.85rem;
+  -ms-grid-columns: (minmax(16.375rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(16.375rem, 1fr));
+  gap: 2.2rem;
 }
 
 @media (min-width: 1024px) {
@@ -1030,9 +1025,10 @@ button,
 }
 
 .article__item {
-  border-radius: 0.3125rem;
+  border-radius: 0.5125rem;
   overflow: hidden;
-  background-color: white;
+  background: transparent;
+  background-color: whitesmoke;
   -webkit-box-shadow: 0px, 3px, 12px rgba(0, 0, 0, 0.15);
           box-shadow: 0px, 3px, 12px rgba(0, 0, 0, 0.15);
   -webkit-transition: all 150ms ease-in-out;
@@ -1045,15 +1041,16 @@ button,
 }
 
 .article__image {
-  width: 37.5rem;
-  height: 26.25rem;
   background-size: cover;
   background-position: center center;
 }
 
+.article__image img {
+  width: 100%;
+}
+
 .article__text {
-  color: white;
-  background-color: white;
+  color: #3a3131;
   padding: 1.825rem 1.825rem 2.5rem 1.825rem;
 }
 

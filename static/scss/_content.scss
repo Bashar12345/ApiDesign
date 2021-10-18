@@ -5,24 +5,48 @@
     //background-color: $lightgray;
     //;
     &.science_page {
-        background-position: center left; 
+        background-position: center left;
         background-image: url($science_page);
     }
+
     &.haddit_page {
         background-position: center left;
         background-image: url($haddit_page);
     }
+
     &.history_page {
         background-position: center bottom;
         background-image: url($history_page);
     }
-    &.qu_page {      
+
+    &.qu_page {
         background-position: center center;
         //background: rgba(255, 255, 255, 0.3)
         background-image: url($qu_page);
     }
 
     .content {
+
+        &__grid {
+            display: grid;
+            z-index: 10;
+            opacity: 0.8;
+            filter: alpha(opacity=80);
+            grid-template-columns: repeat(auto-fit, minmax(16.375rem, 1fr));
+            margin: 0.8rem;
+            gap: 1.85rem;
+            //background-color: aliceblue;
+
+            @include breakpoint-up(large) {
+                grid-template-columns: repeat(3,fr);
+               
+            }
+            // @include breakpoint-up(medium) {
+            //    grid-template-columns: repeat(2, fr);
+                
+            // }
+        }
+
         &__items {
             position: relative;
             //border: 1px solid;
@@ -33,24 +57,6 @@
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-        }
-
-        &__grid {
-            z-index:10;
-            opacity: 0.8;
-            filter: alpha(opacity=80);
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(26.375rem, 1fr));
-            gap: 1.85rem;
-            //background-color: aliceblue;
-
-            @include breakpoint-up(large) {
-                grid-template-columns: repeat(3, fr);
-            }
-
-            @include breakpoint-up(medium) {
-                grid-template-columns: repeat(2, fr);
-            }
         }
 
         &__text {

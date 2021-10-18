@@ -1,5 +1,6 @@
 .reponsHero {
   margin-top: 5.26rem;
+  
 
   @include breakpoint-up(large) {
     min-height: 48rem;
@@ -42,9 +43,7 @@
       background-position: center bottom;
       left: 50%;
       transform: translateX(-50%) translateY(100%);
-
       
-
     }
   }
 
