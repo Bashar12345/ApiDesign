@@ -16,11 +16,12 @@ db = SQLAlchemy(app)
 
 
 class Topic(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(20), unique=True, nullable=False)
-    data = db.relationship('Data',lazy=True) 
+    topic_id = db.Column(db.Integer, primary_key=True)
+    t_name = db.Column(db.String(20), unique=True, nullable=False)
+    data = db.relationship('Data',backref="author",lazy=True) 
 
 class Data(db.Model):
+    data_id = db.column(db.Integer,db.ForeignKey('topic.topic_id'))
     title = db.Column(db.String(120), unique=True, nullable=False)
     description = db.Column(db.String(7500), unique=True, nullable=False)
 
