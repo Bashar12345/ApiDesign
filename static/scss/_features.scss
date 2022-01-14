@@ -8,6 +8,7 @@
 
     &__intro {
         margin-bottom: 3.75rem;
+        text-align: center;
 
         @include breakpoint-up(large) {
             width: 78%;
