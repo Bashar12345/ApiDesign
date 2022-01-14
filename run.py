@@ -1,5 +1,6 @@
 
-
+from flask_sqlalchemy import SQLAlchemy
+ 
 from iapp import app
 
 #from routes import app
