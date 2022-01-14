@@ -2,6 +2,7 @@ from run import app
 from flask import render_template
 from datetime import datetime, timedelta, date
 import nasa_api
+from function import history
 
 #from function import 
 
@@ -49,7 +50,7 @@ def haddit():
 
 @app.route('/history')
 def history():
-    
+    history()
     return render_template('history.html')
 
 
