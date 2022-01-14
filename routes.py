@@ -49,6 +49,7 @@ def haddit():
 
 @app.route('/history')
 def history():
+    
     return render_template('history.html')
 
 
