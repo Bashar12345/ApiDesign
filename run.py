@@ -1,19 +1,20 @@
 
+
 from flask_sqlalchemy import SQLAlchemy
- 
-from iapp import app
+from flask import Flask
 
+
+app = Flask(__name__)
 #from routes import app
-
-
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
-# if app:
-#      app.run(debug=True)
 db = SQLAlchemy(app)
 
+if __name__ == '__main__':
+    app.run(debug=True)
 
-
+# if __name__ == '__main__':
+#     app.run(host='0.0.0.0', port=5000, debug=True)
 
 
 
