@@ -1,4 +1,5 @@
 #import urllib.request
+from RED import app
 import requests
 import json
 import os
@@ -56,9 +57,10 @@ def get_url(response):
 
 
 def download_image(url, date):
-    if os.path.isfile(f'static/temp/{date}.jpg') == False:
+    #print(app.root_path)
+    if os.path.isfile(f'{app.root_path}/static/temp/{date}.jpg') == False:
         raw_image = requests.get(url).content
-        with open(f'static/temp/{date}.jpg', 'wb') as file:
+        with open(f'{app.root_path}/static/temp/{date}.jpg', 'wb') as file:
             file.write(raw_image)
 
     else:
