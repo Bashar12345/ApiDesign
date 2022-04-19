@@ -25,3 +25,4 @@ static/scss/_globals.scss
 static/scss/style.css
 static/scss/style.css.map
 templates/layout.html
+py_client/basic.py
