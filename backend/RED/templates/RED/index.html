@@ -1,5 +1,5 @@
-{%extends "layout.html"%}
-
+{% extends "RED/layout.html" %}
+{% load static %}
 {% block body %}
 
 
@@ -359,10 +359,10 @@
 
         <div class="features__grid">
 
-            <a href="{{url_for('science')}}" class="features__item">
+            <a href="{% url 'RED-science' %}" class="features__item">
 
                 <div class="features__icon">
-                    <img src="{{url_for('static',filename='css/images/sc2.png')}}" alt="">
+                    <img src="{% static 'css/images/sc2.png' %}" alt="">
                 </div>
                 <div class="features__title">
                     Science's assumption
@@ -373,10 +373,10 @@
                 </div>
             </a>
 
-            <a href="{{url_for('qu')}}" class="features__item">
+            <a href="{% url 'RED-quran' %}" class="features__item">
 
                 <div class="features__icon">
-                    <img src="{{url_for('static',filename='css/images/q2.png')}}" alt="">
+                    <img src="{% static 'css/images/q2.png' %}" alt="">
                 </div>
                 <div class="features__title">
                     Quran's fact
@@ -387,10 +387,10 @@
                 </div>
             </a>
 
-            <a href="{{url_for('haddit')}}" class="features__item">
+            <a href="{% url 'RED-haddits' %}" class="features__item">
 
                 <div class="features__icon">
-                    <img src="{{url_for('static',filename='css/images/Al-Hadis.png')}}" alt="">
+                    <img src="{% static 'css/images/Al-Hadis.png' %}" alt="">
                 </div>
                 <div class="features__title">
                     Haddits
@@ -401,10 +401,10 @@
                 </div>
             </a>
 
-            <a href="{{url_for('history')}}" class="features__item">
+            <a href="{% url 'RED-history' %}" class="features__item">
 
                 <div class="features__icon">
-                    <img src="{{url_for('static',filename='css/images/his1.png')}}" alt="">
+                    <img src="{% static 'css/images/his1.png' %}" alt="">
                 </div>
                 <div class="features__title">
                     History of Islam
@@ -427,9 +427,9 @@
 
 
 
-<section class="articles">
-    {% set pic_date ="temp/"+present_date +".jpg" %}
-    {% set previous_pic_date ="temp/"+yesterday +".jpg" %}
+{% comment %} <section class="articles">
+    {{ pic_datedefault:"temp/"+present_date +".jpg" }}
+    {{ previous_pic_date ="temp/"+yesterday +".jpg" }}
 
     <div class="article__content container--paddingall">
 
@@ -442,7 +442,7 @@
             <a href="{{nasa_api.get_hdurl(nasa_api_response)}}" class="article__item ">
 
                 <div class="article__image ">
-                    <img src="{{url_for('static',filename=pic_date)}}" alt="Picture">
+                    <img src="{% static 'pic_date' %}" alt="Picture">
                 </div>
 
                 <div class="article__text">
@@ -457,7 +457,7 @@
 
             <a href="{{nasa_api.get_hdurl(previous_nasa_api_response)}}" class="article__item">
                 <div class="article__image">
-                    <img src="{{url_for('static',filename=previous_pic_date)}}" alt="Picture">
+                    <img src="{% url 'static',filename=previous_pic_date %}" alt="Picture">
                 </div>
 
                 <div class="article__text">
@@ -474,25 +474,25 @@
 
         </div>
     </div>
-</section>
+</section> {% endcomment %}
 
 
 <section class="footer">
 
     <a class="foot_logo" href="#">
-        <img src="{{url_for('static',filename='css/images/df.png')}}" alt="RED" style="inline-size: 6rem;">
+        <img src="{% static 'css/images/df.png' %}" alt="RED" style="inline-size: 6rem;">
     </a>
 
 
 
     <div class="foot__social">
         <a href="">
-            <img src="{{url_for('static',filename='/css/images/facebook.png')}}" alt="">
+            <img src="{% static '/css/images/facebook.png' %}" alt="">
         </a>
-        <a href=""><img src="{{url_for('static',filename='/css/images/twiter.png')}}" alt=""></a>
-        <a href=""><img src="{{url_for('static',filename='/css/images/instagram.png')}}" alt=""></a>
-        <a href=""><img src="{{url_for('static',filename='/css/images/youtube.png')}}" alt=""></a>
-        <a href=""><img src="{{url_for('static',filename='/css/images/Likie.png')}}" alt=""></a>
+        <a href=""><img src="{% static '/css/images/twiter.png' %}" alt=""></a>
+        <a href=""><img src="{% static '/css/images/instagram.png' %}" alt=""></a>
+        <a href=""><img src="{% static '/css/images/youtube.png' %}" alt=""></a>
+        <a href=""><img src="{% static '/css/images/Likie.png' %}" alt=""></a>
 
     </div>
     <div class="foot__links col1">
