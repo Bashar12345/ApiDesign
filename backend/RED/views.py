@@ -13,7 +13,7 @@ def index(request):
     return render(request,'RED/index.html', {'title': title})
 
 #@login_required
-def home(request):
+def red_home(request):
     title = "RED-home"
     return HttpResponse('RED/home.html', {'title': title})
 
