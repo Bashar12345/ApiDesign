@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.utils import timezone
 from django.views.generic import ListView,DetailView
-from . import utils
+from .utils import utils_of_index_page
 
 #from django.views import View
 #from django.contrib.auth.decorators import login_required
@@ -13,9 +13,13 @@ from . import utils
 
 def index(request):
     title = "RED-index"
-    utils_of_index_page()
-    return render(request,'RED/index.html', {'title': title,'present_date':present_date, 'yesterday':yesterday, 'nasa_api':nasa_api ,
-        'previous_nasa_api_response':previous_nasa_api_response,'nasa_api_response':jsondata})
+    custom_response=utils_of_index_page()
+    return render(request, 'RED/index.html', {'title': title})
+
+
+
+    # return render(request,'RED/index.html', {'title': title,'present_date':present_date, 'yesterday':yesterday, 'nasa_api':nasa_api ,
+    #     'previous_nasa_api_response':previous_nasa_api_response,'nasa_api_response':jsondata})
 
 
 # def index():
