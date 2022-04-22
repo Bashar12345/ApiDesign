@@ -31,7 +31,7 @@ def utils_of_index_page():
     desc = nasa_api.get_explaination(nasa_api_response)
 
     todays_res_dic = {'hd_photo':hd_photo,'thumbnail_photo':thumbnail_photo,'date':day,'title':title,'desc':desc} 
-    print(todays_res_dic)
+    #print(todays_res_dic)
 
     #prevoius
     pre_hd_photo = nasa_api.get_hdurl(previous_nasa_api_response)    
@@ -43,7 +43,7 @@ def utils_of_index_page():
     previous_desc = nasa_api.get_explaination(previous_nasa_api_response)
 
     previous_res_dic = {'hd_photo':pre_hd_photo,'thumbnail_photo':pre_thumbnail_photo,'date':previous_day,'title':previous_title,'desc':previous_desc} 
-    print(previous_res_dic)
+    #print(previous_res_dic)
 
     im_url = nasa_api.get_url(nasa_api_response)
     im_url_previous = nasa_api.get_url(previous_nasa_api_response)
