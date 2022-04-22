@@ -13,8 +13,8 @@ from .utils import utils_of_index_page
 
 def index(request):
     title = "RED-index"
-    custom_response=utils_of_index_page()
-    return render(request, 'RED/index.html', {'title': title})
+    ajker_res, ager_res =utils_of_index_page()
+    return render(request, 'RED/index.html', {'title': title,'ajker_res':ajker_res,'ager_res':ager_res})
 
 
 

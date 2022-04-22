@@ -442,34 +442,33 @@
 
 
 
-<a href="{{}}" class="article__item">
+<a href="{{ajker_res.hd_photo}}" class="article__item">
     <div class="article__image">
-        <img src="{% url 'static',filename=previous_pic_date %}" alt="Picture">
+        <img src="{{ajker_res.thumbnail_photo}}" alt="Picture">
     </div>
     <div class="article__text">
         <div class="article__auther">
-            {{}}</div>
+            {{ajker_res.date}}</div>
         <div class="article__title">
-            {{}}</div>
+            {{ajker_res.title}}</div>
         <div class="article__description">
-            {{}} </div>
+            {{ajker_res.desc}} </div>
     </div> 
 </a>
 
-            <a href="{{nasa_api.get_hdurl(previous_nasa_api_response)}}" class="article__item">
-                <div class="article__image">
-                    <img src="{% url 'static',filename=previous_pic_date %}" alt="Picture">
-                </div>
-
-                <div class="article__text">
-                    <div class="article__auther">
-                        {{nasa_api.get_date(previous_nasa_api_response)}}</div>
-                    <div class="article__title">
-                        {{nasa_api.get_title(previous_nasa_api_response)}}</div>
-                    <div class="article__description">
-                        {{nasa_api.get_explaination(previous_nasa_api_response)}} </div>
-                </div>
-            </a> {% endcomment %}
+<a href="{{ager_res.hd_photo}}" class="article__item">
+    <div class="article__image">
+        <img src="{{ager_res.thumbnail_photo}}" alt="Picture">
+    </div>
+    <div class="article__text">
+        <div class="article__auther">
+            {{ager_res.date}}</div>
+        <div class="article__title">
+            {{ager_res.title}}</div>
+        <div class="article__description">
+            {{ager_res.desc}} </div>
+    </div> 
+</a>
 
 
 

@@ -20,7 +20,7 @@ def utils_of_index_page():
     previous_nasa_api_response = nasa_api.get_data(NasaApI_KEY, previous_date)
     #print("\nprevious days --",previous_nasa_api_response['url'])
     
-
+    #todays
     hd_photo = nasa_api.get_hdurl(nasa_api_response)    
     thumbnail_photo = nasa_api.get_url(nasa_api_response)   
 
@@ -30,18 +30,19 @@ def utils_of_index_page():
 
     desc = nasa_api.get_explaination(nasa_api_response)
 
-    todays_res_dic = {'date':day,'title':title,'desc':desc} 
+    todays_res_dic = {'hd_photo':hd_photo,'thumbnail_photo':thumbnail_photo,'date':day,'title':title,'desc':desc} 
     print(todays_res_dic)
 
-    hd_photo = nasa_api.get_hdurl(previous_nasa_api_response)    
-    thumbnail_photo = nasa_api.get_url(previous_nasa_api_response)   
+    #prevoius
+    pre_hd_photo = nasa_api.get_hdurl(previous_nasa_api_response)    
+    pre_thumbnail_photo = nasa_api.get_url(previous_nasa_api_response)   
     previous_day = nasa_api.get_date(previous_nasa_api_response)
 
     previous_title = nasa_api.get_title(previous_nasa_api_response)
 
     previous_desc = nasa_api.get_explaination(previous_nasa_api_response)
 
-    previous_res_dic = {'date':day,'title':title,'desc':desc} 
+    previous_res_dic = {'hd_photo':pre_hd_photo,'thumbnail_photo':pre_thumbnail_photo,'date':previous_day,'title':previous_title,'desc':previous_desc} 
     print(previous_res_dic)
 
     im_url = nasa_api.get_url(nasa_api_response)
@@ -52,4 +53,4 @@ def utils_of_index_page():
 
     nasa_api.download_image(im_url, present_date)
     nasa_api.download_image(im_url_previous, yesterday)
-    return res_dic
+    return todays_res_dic,previous_res_dic
